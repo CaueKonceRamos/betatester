@@ -1435,3 +1435,30 @@ height: 100%;
 
 }
 
+@media (max-width: 700px) {
+    .informacoes {
+        flex-direction: column; /* Alinha os elementos verticalmente no mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .informacoes .informacoes-caixa {
+        width: 100%; /* Ajusta a largura para ocupar toda a tela */
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+    }
+
+    /* Remover imagens */
+    .servicos-item img,
+    .depoimentos-area1 img,
+    .duvidas-item-area1 img,
+    .footer-caixa-esquerda img,
+    .footer-caixa-direita img {
+        display: none; /* Esconde as imagens */
+    }
+
+    /* Ajustar a cor do título "Como podemos te ajudar?" */
+    #servicos h1 {
+        color: #000000; /* Ajuste a cor para a mesma do desktop */
+    }
+}
+
